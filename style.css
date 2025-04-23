@@ -1,0 +1,87 @@
+body {
+    margin: 0;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Arial', sans-serif;
+}
+
+#arena {
+    background-image: url('arena.png');
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+#score {
+    position: absolute;
+    z-index: 1000;
+    left: 50%;
+    top: 5%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+h1 {
+    font-family: 'PressStart2P', 'Georgia', serif;
+}
+
+.sprite {
+    background-image: url('sprites.png');
+    width: 128px;
+    height: 128px;
+    position: absolute;
+}
+
+#player {
+    background-position: 0 128px;
+}
+
+#opponent {
+    background-position: 0 0;
+}
+
+#ball {
+    width: 64px;
+    height: 64px;
+    background-position: 128px 128px;
+}
+
+#controls-left,
+#controls-right {
+    position: absolute;
+    bottom: 0;
+}
+
+#controls-left {
+    left: 0;
+}
+
+#controls-right {
+    right: 0;
+}
+
+.control-button {
+    margin: 16px;
+    width: 64px;
+    height: 64px;
+}
+
+#up {
+    background-position: 128px 0;
+}
+
+#down {
+    background-position: 128px 192px;
+}
+
+#left {
+    background-position: 64px 0;
+}
+
+#right {
+    background-position: 64px 192px;
+}
