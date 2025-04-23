@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Game Project</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="ping.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="arena">
+        <div id="score">
+            <h1>
+                <span id="playerScore">0</span>
+                -
+                <span id="opponentScore">0</span>
+            </h1>
+        </div>
+        <div id="player" class="sprite"></div>
+        <div id="opponent" class="sprite"></div>
+        <div id="ball" class="sprite"></div>
+        <div id="controls-left" class="controls">
+            <button id="up" class="control-button sprite">Up</button>
+            <button id="down" class="control-button sprite">Down</button>
+        </div>
+        <div id="controls-right" class="controls">
+            <button id="left" class="control-button sprite">Left</button>
+            <button id="right" class="control-button sprite">Right</button>
+        </div>
+    </div>
+</body>
+</html>
